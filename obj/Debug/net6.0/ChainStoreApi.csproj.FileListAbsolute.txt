@@ -1,0 +1,153 @@
+/Users/vuhuy/Project/ChainStoreApi/bin/Debug/net6.0/appsettings.Development.json
+/Users/vuhuy/Project/ChainStoreApi/bin/Debug/net6.0/appsettings.json
+/Users/vuhuy/Project/ChainStoreApi/bin/Debug/net6.0/ChainStoreApi
+/Users/vuhuy/Project/ChainStoreApi/bin/Debug/net6.0/ChainStoreApi.deps.json
+/Users/vuhuy/Project/ChainStoreApi/bin/Debug/net6.0/ChainStoreApi.runtimeconfig.json
+/Users/vuhuy/Project/ChainStoreApi/bin/Debug/net6.0/ChainStoreApi.dll
+/Users/vuhuy/Project/ChainStoreApi/bin/Debug/net6.0/ChainStoreApi.pdb
+/Users/vuhuy/Project/ChainStoreApi/bin/Debug/net6.0/Microsoft.OpenApi.dll
+/Users/vuhuy/Project/ChainStoreApi/bin/Debug/net6.0/Swashbuckle.AspNetCore.Swagger.dll
+/Users/vuhuy/Project/ChainStoreApi/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Users/vuhuy/Project/ChainStoreApi/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/Users/vuhuy/Project/ChainStoreApi/obj/Debug/net6.0/ChainStoreApi.csproj.AssemblyReference.cache
+/Users/vuhuy/Project/ChainStoreApi/obj/Debug/net6.0/ChainStoreApi.GeneratedMSBuildEditorConfig.editorconfig
+/Users/vuhuy/Project/ChainStoreApi/obj/Debug/net6.0/ChainStoreApi.AssemblyInfoInputs.cache
+/Users/vuhuy/Project/ChainStoreApi/obj/Debug/net6.0/ChainStoreApi.AssemblyInfo.cs
+/Users/vuhuy/Project/ChainStoreApi/obj/Debug/net6.0/ChainStoreApi.csproj.CoreCompileInputs.cache
+/Users/vuhuy/Project/ChainStoreApi/obj/Debug/net6.0/ChainStoreApi.MvcApplicationPartsAssemblyInfo.cs
+/Users/vuhuy/Project/ChainStoreApi/obj/Debug/net6.0/ChainStoreApi.MvcApplicationPartsAssemblyInfo.cache
+/Users/vuhuy/Project/ChainStoreApi/obj/Debug/net6.0/staticwebassets.build.json
+/Users/vuhuy/Project/ChainStoreApi/obj/Debug/net6.0/staticwebassets.development.json
+/Users/vuhuy/Project/ChainStoreApi/obj/Debug/net6.0/scopedcss/bundle/ChainStoreApi.styles.css
+/Users/vuhuy/Project/ChainStoreApi/obj/Debug/net6.0/ChainStoreApi.csproj.CopyComplete
+/Users/vuhuy/Project/ChainStoreApi/obj/Debug/net6.0/ChainStoreApi.dll
+/Users/vuhuy/Project/ChainStoreApi/obj/Debug/net6.0/refint/ChainStoreApi.dll
+/Users/vuhuy/Project/ChainStoreApi/obj/Debug/net6.0/ChainStoreApi.pdb
+/Users/vuhuy/Project/ChainStoreApi/obj/Debug/net6.0/ChainStoreApi.genruntimeconfig.cache
+/Users/vuhuy/Project/ChainStoreApi/obj/Debug/net6.0/ref/ChainStoreApi.dll
+/Users/vuhuy/Project/ChainStoreApi/bin/Debug/net6.0/DnsClient.dll
+/Users/vuhuy/Project/ChainStoreApi/bin/Debug/net6.0/MongoDB.Bson.dll
+/Users/vuhuy/Project/ChainStoreApi/bin/Debug/net6.0/MongoDB.Driver.dll
+/Users/vuhuy/Project/ChainStoreApi/bin/Debug/net6.0/MongoDB.Driver.Core.dll
+/Users/vuhuy/Project/ChainStoreApi/bin/Debug/net6.0/MongoDB.Libmongocrypt.dll
+/Users/vuhuy/Project/ChainStoreApi/bin/Debug/net6.0/SharpCompress.dll
+/Users/vuhuy/Project/ChainStoreApi/bin/Debug/net6.0/runtimes/linux/native/libsnappy64.so
+/Users/vuhuy/Project/ChainStoreApi/bin/Debug/net6.0/runtimes/linux/native/libzstd.so
+/Users/vuhuy/Project/ChainStoreApi/bin/Debug/net6.0/runtimes/osx/native/libsnappy64.dylib
+/Users/vuhuy/Project/ChainStoreApi/bin/Debug/net6.0/runtimes/osx/native/libzstd.dylib
+/Users/vuhuy/Project/ChainStoreApi/bin/Debug/net6.0/runtimes/win/native/libzstd.dll
+/Users/vuhuy/Project/ChainStoreApi/bin/Debug/net6.0/runtimes/win/native/snappy32.dll
+/Users/vuhuy/Project/ChainStoreApi/bin/Debug/net6.0/runtimes/win/native/snappy64.dll
+/Users/vuhuy/Project/ChainStoreApi/bin/Debug/net6.0/runtimes/linux/native/libmongocrypt.so
+/Users/vuhuy/Project/ChainStoreApi/bin/Debug/net6.0/runtimes/osx/native/libmongocrypt.dylib
+/Users/vuhuy/Project/ChainStoreApi/bin/Debug/net6.0/runtimes/win/native/mongocrypt.dll
+/Users/vuhuy/Project/ChainStoreApi/bin/Debug/net6.0/Microsoft.IdentityModel.Abstractions.dll
+/Users/vuhuy/Project/ChainStoreApi/bin/Debug/net6.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/vuhuy/Project/ChainStoreApi/bin/Debug/net6.0/Microsoft.IdentityModel.Logging.dll
+/Users/vuhuy/Project/ChainStoreApi/bin/Debug/net6.0/Microsoft.IdentityModel.Tokens.dll
+/Users/vuhuy/Project/ChainStoreApi/bin/Debug/net6.0/System.IdentityModel.Tokens.Jwt.dll
+/Users/vuhuy/Project/ChainStoreApi/bin/Debug/net6.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/vuhuy/Project/ChainStoreApi/bin/Debug/net6.0/Microsoft.IdentityModel.Protocols.dll
+/Users/vuhuy/Project/ChainStoreApi/bin/Debug/net6.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\Project of Huy\ChainStoreApi\obj\Debug\net6.0\ChainStoreApi.csproj.AssemblyReference.cache
+E:\Project of Huy\ChainStoreApi\obj\Debug\net6.0\ChainStoreApi.GeneratedMSBuildEditorConfig.editorconfig
+E:\Project of Huy\ChainStoreApi\obj\Debug\net6.0\ChainStoreApi.AssemblyInfoInputs.cache
+E:\Project of Huy\ChainStoreApi\obj\Debug\net6.0\ChainStoreApi.AssemblyInfo.cs
+E:\Project of Huy\ChainStoreApi\obj\Debug\net6.0\ChainStoreApi.csproj.CoreCompileInputs.cache
+E:\Project of Huy\ChainStoreApi\obj\Debug\net6.0\ChainStoreApi.MvcApplicationPartsAssemblyInfo.cs
+E:\Project of Huy\ChainStoreApi\obj\Debug\net6.0\ChainStoreApi.MvcApplicationPartsAssemblyInfo.cache
+E:\Project of Huy\ChainStoreApi\obj\Debug\net6.0\ChainStoreApi.dll
+E:\Project of Huy\ChainStoreApi\obj\Debug\net6.0\ref\ChainStoreApi.dll
+E:\Project of Huy\ChainStoreApi\obj\Debug\net6.0\ChainStoreApi.pdb
+E:\Project of Huy\ChainStoreApi\bin\Debug\net6.0\appsettings.Development.json
+E:\Project of Huy\ChainStoreApi\bin\Debug\net6.0\appsettings.json
+E:\Project of Huy\ChainStoreApi\bin\Debug\net6.0\ChainStoreApi.exe
+E:\Project of Huy\ChainStoreApi\bin\Debug\net6.0\ChainStoreApi.deps.json
+E:\Project of Huy\ChainStoreApi\bin\Debug\net6.0\ChainStoreApi.runtimeconfig.json
+E:\Project of Huy\ChainStoreApi\bin\Debug\net6.0\ChainStoreApi.dll
+E:\Project of Huy\ChainStoreApi\bin\Debug\net6.0\ChainStoreApi.pdb
+E:\Project of Huy\ChainStoreApi\bin\Debug\net6.0\DnsClient.dll
+E:\Project of Huy\ChainStoreApi\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+E:\Project of Huy\ChainStoreApi\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+E:\Project of Huy\ChainStoreApi\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\Project of Huy\ChainStoreApi\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+E:\Project of Huy\ChainStoreApi\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+E:\Project of Huy\ChainStoreApi\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\Project of Huy\ChainStoreApi\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+E:\Project of Huy\ChainStoreApi\bin\Debug\net6.0\Microsoft.OpenApi.dll
+E:\Project of Huy\ChainStoreApi\bin\Debug\net6.0\MongoDB.Bson.dll
+E:\Project of Huy\ChainStoreApi\bin\Debug\net6.0\MongoDB.Driver.dll
+E:\Project of Huy\ChainStoreApi\bin\Debug\net6.0\MongoDB.Driver.Core.dll
+E:\Project of Huy\ChainStoreApi\bin\Debug\net6.0\MongoDB.Libmongocrypt.dll
+E:\Project of Huy\ChainStoreApi\bin\Debug\net6.0\SharpCompress.dll
+E:\Project of Huy\ChainStoreApi\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+E:\Project of Huy\ChainStoreApi\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+E:\Project of Huy\ChainStoreApi\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+E:\Project of Huy\ChainStoreApi\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+E:\Project of Huy\ChainStoreApi\bin\Debug\net6.0\runtimes\linux\native\libsnappy64.so
+E:\Project of Huy\ChainStoreApi\bin\Debug\net6.0\runtimes\linux\native\libzstd.so
+E:\Project of Huy\ChainStoreApi\bin\Debug\net6.0\runtimes\osx\native\libsnappy64.dylib
+E:\Project of Huy\ChainStoreApi\bin\Debug\net6.0\runtimes\osx\native\libzstd.dylib
+E:\Project of Huy\ChainStoreApi\bin\Debug\net6.0\runtimes\win\native\libzstd.dll
+E:\Project of Huy\ChainStoreApi\bin\Debug\net6.0\runtimes\win\native\snappy32.dll
+E:\Project of Huy\ChainStoreApi\bin\Debug\net6.0\runtimes\win\native\snappy64.dll
+E:\Project of Huy\ChainStoreApi\bin\Debug\net6.0\runtimes\linux\native\libmongocrypt.so
+E:\Project of Huy\ChainStoreApi\bin\Debug\net6.0\runtimes\osx\native\libmongocrypt.dylib
+E:\Project of Huy\ChainStoreApi\bin\Debug\net6.0\runtimes\win\native\mongocrypt.dll
+E:\Project of Huy\ChainStoreApi\obj\Debug\net6.0\staticwebassets.build.json
+E:\Project of Huy\ChainStoreApi\obj\Debug\net6.0\staticwebassets.development.json
+E:\Project of Huy\ChainStoreApi\obj\Debug\net6.0\scopedcss\bundle\ChainStoreApi.styles.css
+E:\Project of Huy\ChainStoreApi\obj\Debug\net6.0\ChainStoreApi.csproj.CopyComplete
+E:\Project of Huy\ChainStoreApi\obj\Debug\net6.0\refint\ChainStoreApi.dll
+E:\Project of Huy\ChainStoreApi\obj\Debug\net6.0\ChainStoreApi.genruntimeconfig.cache
+C:\Users\Admin\OneDrive\Desktop\Project_of_Huy\ChainStoreApi\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\Admin\OneDrive\Desktop\Project_of_Huy\ChainStoreApi\bin\Debug\net6.0\appsettings.json
+C:\Users\Admin\OneDrive\Desktop\Project_of_Huy\ChainStoreApi\bin\Debug\net6.0\ChainStoreApi.exe
+C:\Users\Admin\OneDrive\Desktop\Project_of_Huy\ChainStoreApi\bin\Debug\net6.0\ChainStoreApi.deps.json
+C:\Users\Admin\OneDrive\Desktop\Project_of_Huy\ChainStoreApi\bin\Debug\net6.0\ChainStoreApi.runtimeconfig.json
+C:\Users\Admin\OneDrive\Desktop\Project_of_Huy\ChainStoreApi\bin\Debug\net6.0\ChainStoreApi.dll
+C:\Users\Admin\OneDrive\Desktop\Project_of_Huy\ChainStoreApi\bin\Debug\net6.0\ChainStoreApi.pdb
+C:\Users\Admin\OneDrive\Desktop\Project_of_Huy\ChainStoreApi\bin\Debug\net6.0\DnsClient.dll
+C:\Users\Admin\OneDrive\Desktop\Project_of_Huy\ChainStoreApi\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Admin\OneDrive\Desktop\Project_of_Huy\ChainStoreApi\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Admin\OneDrive\Desktop\Project_of_Huy\ChainStoreApi\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Admin\OneDrive\Desktop\Project_of_Huy\ChainStoreApi\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Admin\OneDrive\Desktop\Project_of_Huy\ChainStoreApi\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Admin\OneDrive\Desktop\Project_of_Huy\ChainStoreApi\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Admin\OneDrive\Desktop\Project_of_Huy\ChainStoreApi\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Admin\OneDrive\Desktop\Project_of_Huy\ChainStoreApi\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\Admin\OneDrive\Desktop\Project_of_Huy\ChainStoreApi\bin\Debug\net6.0\MongoDB.Bson.dll
+C:\Users\Admin\OneDrive\Desktop\Project_of_Huy\ChainStoreApi\bin\Debug\net6.0\MongoDB.Driver.dll
+C:\Users\Admin\OneDrive\Desktop\Project_of_Huy\ChainStoreApi\bin\Debug\net6.0\MongoDB.Driver.Core.dll
+C:\Users\Admin\OneDrive\Desktop\Project_of_Huy\ChainStoreApi\bin\Debug\net6.0\MongoDB.Libmongocrypt.dll
+C:\Users\Admin\OneDrive\Desktop\Project_of_Huy\ChainStoreApi\bin\Debug\net6.0\SharpCompress.dll
+C:\Users\Admin\OneDrive\Desktop\Project_of_Huy\ChainStoreApi\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Admin\OneDrive\Desktop\Project_of_Huy\ChainStoreApi\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Admin\OneDrive\Desktop\Project_of_Huy\ChainStoreApi\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Admin\OneDrive\Desktop\Project_of_Huy\ChainStoreApi\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Admin\OneDrive\Desktop\Project_of_Huy\ChainStoreApi\bin\Debug\net6.0\runtimes\linux\native\libsnappy64.so
+C:\Users\Admin\OneDrive\Desktop\Project_of_Huy\ChainStoreApi\bin\Debug\net6.0\runtimes\linux\native\libzstd.so
+C:\Users\Admin\OneDrive\Desktop\Project_of_Huy\ChainStoreApi\bin\Debug\net6.0\runtimes\osx\native\libsnappy64.dylib
+C:\Users\Admin\OneDrive\Desktop\Project_of_Huy\ChainStoreApi\bin\Debug\net6.0\runtimes\osx\native\libzstd.dylib
+C:\Users\Admin\OneDrive\Desktop\Project_of_Huy\ChainStoreApi\bin\Debug\net6.0\runtimes\win\native\libzstd.dll
+C:\Users\Admin\OneDrive\Desktop\Project_of_Huy\ChainStoreApi\bin\Debug\net6.0\runtimes\win\native\snappy32.dll
+C:\Users\Admin\OneDrive\Desktop\Project_of_Huy\ChainStoreApi\bin\Debug\net6.0\runtimes\win\native\snappy64.dll
+C:\Users\Admin\OneDrive\Desktop\Project_of_Huy\ChainStoreApi\bin\Debug\net6.0\runtimes\linux\native\libmongocrypt.so
+C:\Users\Admin\OneDrive\Desktop\Project_of_Huy\ChainStoreApi\bin\Debug\net6.0\runtimes\osx\native\libmongocrypt.dylib
+C:\Users\Admin\OneDrive\Desktop\Project_of_Huy\ChainStoreApi\bin\Debug\net6.0\runtimes\win\native\mongocrypt.dll
+C:\Users\Admin\OneDrive\Desktop\Project_of_Huy\ChainStoreApi\obj\Debug\net6.0\ChainStoreApi.csproj.AssemblyReference.cache
+C:\Users\Admin\OneDrive\Desktop\Project_of_Huy\ChainStoreApi\obj\Debug\net6.0\ChainStoreApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\OneDrive\Desktop\Project_of_Huy\ChainStoreApi\obj\Debug\net6.0\ChainStoreApi.AssemblyInfoInputs.cache
+C:\Users\Admin\OneDrive\Desktop\Project_of_Huy\ChainStoreApi\obj\Debug\net6.0\ChainStoreApi.AssemblyInfo.cs
+C:\Users\Admin\OneDrive\Desktop\Project_of_Huy\ChainStoreApi\obj\Debug\net6.0\ChainStoreApi.csproj.CoreCompileInputs.cache
+C:\Users\Admin\OneDrive\Desktop\Project_of_Huy\ChainStoreApi\obj\Debug\net6.0\ChainStoreApi.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Admin\OneDrive\Desktop\Project_of_Huy\ChainStoreApi\obj\Debug\net6.0\ChainStoreApi.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Admin\OneDrive\Desktop\Project_of_Huy\ChainStoreApi\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\Admin\OneDrive\Desktop\Project_of_Huy\ChainStoreApi\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\Admin\OneDrive\Desktop\Project_of_Huy\ChainStoreApi\obj\Debug\net6.0\scopedcss\bundle\ChainStoreApi.styles.css
+C:\Users\Admin\OneDrive\Desktop\Project_of_Huy\ChainStoreApi\obj\Debug\net6.0\ChainStoreApi.csproj.CopyComplete
+C:\Users\Admin\OneDrive\Desktop\Project_of_Huy\ChainStoreApi\obj\Debug\net6.0\ChainStoreApi.dll
+C:\Users\Admin\OneDrive\Desktop\Project_of_Huy\ChainStoreApi\obj\Debug\net6.0\refint\ChainStoreApi.dll
+C:\Users\Admin\OneDrive\Desktop\Project_of_Huy\ChainStoreApi\obj\Debug\net6.0\ChainStoreApi.pdb
+C:\Users\Admin\OneDrive\Desktop\Project_of_Huy\ChainStoreApi\obj\Debug\net6.0\ChainStoreApi.genruntimeconfig.cache
+C:\Users\Admin\OneDrive\Desktop\Project_of_Huy\ChainStoreApi\obj\Debug\net6.0\ref\ChainStoreApi.dll
