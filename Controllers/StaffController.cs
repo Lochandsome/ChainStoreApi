@@ -6,43 +6,43 @@ using MongoDB.Bson;
 
 namespace ChainStoreApi.Controllers;
 
-    [ApiController]
-    [Route("[controller]")]
-    public class StaffController : ControllerBase
+[ApiController]
+[Route("[controller]")]
+public class StaffController : ControllerBase
+{
+    private readonly StaffService _staffService;
+
+    private readonly ProfileStaffService _profileStaffServie;
+
+    //  public StaffController(StaffService stafftService)=> _staffService = stafftService;
+    public StaffController(StaffService staffService, ProfileStaffService profileStaffServie)
     {
-        private readonly StaffService _staffService;
-        
-        private readonly ProfileStaffService _profileStaffServie;
+        _staffService = staffService;
+        _profileStaffServie = profileStaffServie;
 
-        //  public StaffController(StaffService stafftService)=> _staffService = stafftService;
-        public StaffController(StaffService staffService, ProfileStaffService profileStaffServie) 
-        {
-            _staffService = staffService;
-            _profileStaffServie = profileStaffServie;
-            
-        }
-        
-        [HttpGet()]
-        public async Task<List<Staff>> GetStaffOfStore(string idstore) => await _staffService.GetStaffAsyncStore(idstore);
+    }
 
-        [HttpGet("{id:length(24)}")]
-        public async Task<ActionResult<ProfileStaff>> Get(string id)
-        {
-            
-            
-            var profile = await _profileStaffServie.GetProfileStaffAsync(id);
-            if (profile is null)
+    [HttpGet()]
+    public async Task<List<Staff>> GetStaffOfStore(string idstore) => await _staffService.GetStaffAsyncStore(idstore);
+
+    [HttpGet("{id:length(24)}")]
+    public async Task<ActionResult<ProfileStaff>> Get(string id)
+    {
+
+
+        var profile = await _profileStaffServie.GetProfileStaffAsync(id);
+        if (profile is null)
             return NotFound();
 
-            return profile;
-        }
-    [Authorize(Roles ="admin")]
+        return profile;
+    }
+    [Authorize(Roles = "admin")]
     [HttpGet("manager")]
     public async Task<ActionResult<List<ProfileStaff>>> GetStaff()
     {
         var profileStaff = await _profileStaffServie.GetProfileManagerAsync();
         if (profileStaff is null)
-        return BadRequest("Không có manager nào!");
+            return BadRequest("Không có manager nào!");
         return profileStaff;
     }
 
@@ -53,7 +53,7 @@ namespace ChainStoreApi.Controllers;
 
         return CreatedAtAction(nameof(Get), new { id = staff.id }, staff);
     }
-    
+
 
     [HttpPut("{id:length(24)}")]
     public async Task<IActionResult> Update(string id, Staff staffupdate)
@@ -87,16 +87,22 @@ namespace ChainStoreApi.Controllers;
         return NoContent();
     }
     [HttpGet("search")]
-    public async Task<IActionResult> Search([FromQuery(Name="staff")] string? staff, [FromQuery(Name="store")] string? store, [FromQuery(Name="page")] int? page)
+    public async Task<IActionResult> Search([FromQuery(Name = "staff")] string? staff, [FromQuery(Name = "store")] string? store, [FromQuery(Name = "page")] int? page)
     {
-        return Ok(await _staffService.GetSearchStaff(staff,store,page));
+        return Ok(await _staffService.GetSearchStaff(staff, store, page));
     }
     [HttpGet("withaccountid/{id:length(24)}")]
     public async Task<ActionResult<Staff>> getStaffWithAccountId(string id)
     {
-       var staff =    await _staffService!.GetStaffWithAccountIdAsync(id);
-        if(staff is null)
+        var staff = await _staffService!.GetStaffWithAccountIdAsync(id);
+        if (staff is null)
             return NotFound();
         return staff;
     }
+    [HttpGet("AllStaff")]
+    public async Task<List<Staff>> GetAllStaff()
+    {
+        var staff = await _staffService.GetAllStaff();
+        return staff;
     }
+}

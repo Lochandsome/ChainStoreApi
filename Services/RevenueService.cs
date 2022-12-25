@@ -6,6 +6,7 @@ using MongoDB.Bson;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
+using System.Collections;
 
 namespace ChainStoreApi.Services;
 
@@ -167,6 +168,184 @@ public class RevenueService
 
         return revenueWeek.ToList();
     }
+
+    // Main Dashboard
+    public object GetCalculateLastMonth()
+    {
+        var query = _OrderCollection.Find(_ => true).ToList();
+
+        var today = DateTime.Today;
+        var month = new DateTime(today.Year, today.Month, 1);
+        var firstmonth = month.AddMonths(-2);
+        var lastmonth = month.AddDays(-2);
+
+        var ListLastMonth = from order in query
+                            where DateTime.Parse(DateTime.Parse(order.OrderDate + string.Empty).ToString("d")) >=
+                                  DateTime.Parse(DateTime.Parse(firstmonth + string.Empty).ToString("d")) &&
+                                  DateTime.Parse(DateTime.Parse(order.OrderDate + string.Empty).ToString("d")) <=
+                                  DateTime.Parse(DateTime.Parse(lastmonth + string.Empty).ToString("d"))
+                            select new
+                            {
+                                order.OrderDate,
+                                order.TotalRecord,
+                                order.OrderDetails.Count
+                            };
+
+        var TotalSales = (from order in ListLastMonth
+                          group order by new
+                          {
+                              DateTime.Now.AddMonths(-1).Month
+                          } into grup
+                          select new
+                          {
+                              month = grup.Key.Month,
+                              total = grup.Sum(m => Int32.Parse(m.TotalRecord)),
+                              count = grup.Sum(mc => mc.Count)
+                          }).ToList();
+
+        return TotalSales;
+    }
+    public object GetBetSellingProduct()
+    {
+        var query = _OrderCollection.Find(_ => true).ToList();
+
+        var today = DateTime.Today;
+        var month = new DateTime(today.Year, today.Month, 1);
+        var firstmonth = month.AddMonths(-2);
+        var lastmonth = month.AddMonths(1);
+
+        var ListLastMonth = (from order in query
+                             where DateTime.Parse(DateTime.Parse(order.OrderDate + string.Empty).ToString("d")) >=
+                                   DateTime.Parse(DateTime.Parse(firstmonth + string.Empty).ToString("d")) &&
+                                   DateTime.Parse(DateTime.Parse(order.OrderDate + string.Empty).ToString("d")) <=
+                                   DateTime.Parse(DateTime.Parse(lastmonth + string.Empty).ToString("d"))
+                             select new
+                             {
+                                 order.OrderDetails
+                             }).ToList();
+        var listquery = new List<OrderDetails>();
+        foreach (var valquery in ListLastMonth)
+        {
+            foreach (var valqs in valquery.OrderDetails)
+            {
+                listquery.Add(valqs);
+            }
+        }
+        var TotalSales = from order in listquery
+                         group order by new
+                         {
+                             order.Product.name
+                         } into grup
+                         select new
+                         {
+                             nameProduct = grup.Key.name,
+                             BSellingPro = grup.Sum(bs => bs.count)
+                         };
+
+        ArrayList obs = new ArrayList();
+        var max = TotalSales.Max(x => x.BSellingPro);
+        var maxValue = TotalSales.Where(x => x.BSellingPro == max).FirstOrDefault();
+        obs.Add(new {
+            //max = "maxValue",
+            maxValue
+        });
+        var min = TotalSales.Min(x => x.BSellingPro);
+        var minValue = TotalSales.Where(x => x.BSellingPro == min).FirstOrDefault();
+        obs.Add(new {
+            //min = "minValue",
+            minValue
+        });
+        return obs;
+    }
+    // Store Dashboard
+    public object GetCalculateLastMonthStore()
+    {
+        var query = _OrderCollection.Find(_ => true).ToList();
+
+        var today = DateTime.Today;
+        var month = new DateTime(today.Year, today.Month, 1);
+        var firstmonth = month.AddMonths(-2);
+        var lastmonth = month.AddDays(-2);
+
+        var ListLastMonth = from order in query
+                            where DateTime.Parse(DateTime.Parse(order.OrderDate + string.Empty).ToString("d")) >=
+                                  DateTime.Parse(DateTime.Parse(firstmonth + string.Empty).ToString("d")) &&
+                                  DateTime.Parse(DateTime.Parse(order.OrderDate + string.Empty).ToString("d")) <=
+                                  DateTime.Parse(DateTime.Parse(lastmonth + string.Empty).ToString("d"))
+                            select new
+                            {
+                                order.OrderDate,
+                                order.TotalRecord,
+                                order.OrderDetails.Count
+                            };
+
+        var TotalSales = (from order in ListLastMonth
+                          group order by new
+                          {
+                              DateTime.Now.AddMonths(-1).Month
+                          } into grup
+                          select new
+                          {
+                              month = grup.Key.Month,
+                              total = grup.Sum(m => Int32.Parse(m.TotalRecord)),
+                              count = grup.Sum(mc => mc.Count)
+                          }).ToList();
+
+        return TotalSales;
+    }
+    public object GetBetSellingProductStore()
+    {
+        var query = _OrderCollection.Find(_ => true).ToList();
+
+        var today = DateTime.Today;
+        var month = new DateTime(today.Year, today.Month, 1);
+        var firstmonth = month.AddMonths(-2);
+        var lastmonth = month.AddMonths(1);
+
+        var ListLastMonth = (from order in query
+                             where DateTime.Parse(DateTime.Parse(order.OrderDate + string.Empty).ToString("d")) >=
+                                   DateTime.Parse(DateTime.Parse(firstmonth + string.Empty).ToString("d")) &&
+                                   DateTime.Parse(DateTime.Parse(order.OrderDate + string.Empty).ToString("d")) <=
+                                   DateTime.Parse(DateTime.Parse(lastmonth + string.Empty).ToString("d"))
+                             select new
+                             {
+                                 order.OrderDetails
+                             }).ToList();
+        var listquery = new List<OrderDetails>();
+        foreach (var valquery in ListLastMonth)
+        {
+            foreach (var valqs in valquery.OrderDetails)
+            {
+                listquery.Add(valqs);
+            }
+        }
+        var TotalSales = from order in listquery
+                         group order by new
+                         {
+                             order.Product.name
+                         } into grup
+                         select new
+                         {
+                             nameProduct = grup.Key.name,
+                             BSellingPro = grup.Sum(bs => bs.count)
+                         };
+
+        ArrayList obs = new ArrayList();
+        var max = TotalSales.Max(x => x.BSellingPro);
+        var maxValue = TotalSales.Where(x => x.BSellingPro == max).FirstOrDefault();
+        obs.Add(new {
+            //max = "maxValue",
+            maxValue
+        });
+        var min = TotalSales.Min(x => x.BSellingPro);
+        var minValue = TotalSales.Where(x => x.BSellingPro == min).FirstOrDefault();
+        obs.Add(new {
+            //min = "minValue",
+            minValue
+        });
+        return obs;
+    }
+
     public class revenue
     {
         public string rYear { get; set; }
