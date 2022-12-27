@@ -33,4 +33,16 @@ public class revenueController : ControllerBase
         var revenueCLM = _revenueService.GetBetSellingProduct();
         return Ok(revenueCLM);
     }
+    [HttpGet("GetCalculateLastMonthStore/{id:length(24)}")]
+    public object GetCalculateLastMonthStore(string id)
+    {
+        var revenueCLM = _revenueService.GetCalculateLastMonthStore(id);
+        return Ok(revenueCLM);
+    }
+    [HttpGet("GetBetSellingProductStore/{id:length(24)}")]
+    public object GetBetSellingProductStore(string id)
+    {
+        var revenueCLM = _revenueService.GetBetSellingProductStore(id);
+        return Ok(revenueCLM);
+    }
 }
