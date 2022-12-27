@@ -258,9 +258,9 @@ public class RevenueService
         return obs;
     }
     // Store Dashboard
-    public object GetCalculateLastMonthStore()
-    {
-        var query = _OrderCollection.Find(_ => true).ToList();
+    public object GetCalculateLastMonthStore(string storeid)
+    {        
+        var query = _OrderCollection.Find(x => x.OrderStaff.storeId == storeid).ToList();
 
         var today = DateTime.Today;
         var month = new DateTime(today.Year, today.Month, 1);
@@ -293,9 +293,9 @@ public class RevenueService
 
         return TotalSales;
     }
-    public object GetBetSellingProductStore()
+    public object GetBetSellingProductStore(string storeid)
     {
-        var query = _OrderCollection.Find(_ => true).ToList();
+        var query = _OrderCollection.Find(x => x.OrderStaff.storeId == storeid).ToList();
 
         var today = DateTime.Today;
         var month = new DateTime(today.Year, today.Month, 1);

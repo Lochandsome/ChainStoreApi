@@ -59,18 +59,22 @@ public class OrderService
     //     return query;
     // }
     public async Task<List<Order>> SearchKeyword(string? startDate, string? endDate, string? keyword)
-    {       
+    {
         var query = await _OrderCollection.Find(_ => true).ToListAsync();
         if (!string.IsNullOrEmpty(startDate))
         {
-            DateTime start = DateTime.ParseExact(startDate, "yyyy-MM-dd", CultureInfo.GetCultureInfo("vi-VN"));           
-            query = query.Where(x => x.OrderDate >= start).ToList();
+            //DateTime start = DateTime.ParseExact(startDate, "yyyy-MM-dd", CultureInfo.GetCultureInfo("vi-VN"));           
+            query = query.Where(x =>
+            DateTime.Parse(DateTime.Parse(x.OrderDate + string.Empty).ToString("d")) >=
+            DateTime.Parse(DateTime.Parse(startDate + string.Empty).ToString("d"))).ToList();
         }
 
         if (!string.IsNullOrEmpty(endDate))
         {
-             DateTime end = DateTime.ParseExact(endDate, "yyyy-MM-dd", CultureInfo.GetCultureInfo("vi-VN"));
-            query = query.Where(x => x.LastEditDate <= end).ToList();
+            //DateTime end = DateTime.ParseExact(endDate, "yyyy-MM-dd", CultureInfo.GetCultureInfo("vi-VN"));
+            query = query.Where(x =>
+            DateTime.Parse(DateTime.Parse(x.OrderDate + string.Empty).ToString("d")) <=
+            DateTime.Parse(DateTime.Parse(endDate + string.Empty).ToString("d"))).ToList();
         }
         if (!string.IsNullOrEmpty(keyword))
         {
