@@ -21,6 +21,12 @@ public class revenueController : ControllerBase
         var revenue = await _revenueService.GetRevenueByWeek(startDate, endDate);
         return Ok(revenue);
     }
+    [HttpGet("GetRevenueForStore")]
+    public object GetRevenueForStore()
+    {
+        var revenue = _revenueService.GetRevenueForStore();
+        return Ok(revenue);
+    }
     [HttpGet("GetCalculateLastMonth")]
     public object GetCalculateLastMonth()
     {
