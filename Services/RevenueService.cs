@@ -13,6 +13,7 @@ namespace ChainStoreApi.Services;
 public class RevenueService
 {
     private readonly IMongoCollection<Order> _OrderCollection;
+    private readonly IMongoCollection<Store> _StoreCollection;
     public RevenueService(
         IOptions<DatabaseSetting> databaseSetting)
     {
@@ -21,6 +22,7 @@ public class RevenueService
         var mongoDatabase = mongoClient.GetDatabase(databaseSetting.Value.DatabaseName);
 
         _OrderCollection = mongoDatabase.GetCollection<Order>(databaseSetting.Value.OrderCollectionName);
+        _StoreCollection = mongoDatabase.GetCollection<Store>(databaseSetting.Value.StoreCollectionName);
     }
     private static int profit = 0;
     private static int productNumber = 0;
@@ -169,6 +171,47 @@ public class RevenueService
         return revenueWeek.ToList();
     }
 
+    // Get Revenue for All Store
+    public object GetRevenueForStore()
+    {
+        // lấy ra thông tin trước tiên của toàn bộ hóa đơn
+        var query = _OrderCollection.Find(_ => true).ToList();
+        var queryS = _StoreCollection.Find(_ => true).ToList();
+
+        var today = DateTime.Today;
+        var years = new DateTime(today.Year, 1, 1);        
+        var firstYear = years.AddYears(0);
+        var lastYear = years.AddDays(-1).AddYears(1);
+
+        var ListLastYear = from order in query
+                           where DateTime.Parse(DateTime.Parse(order.OrderDate + string.Empty).ToString("d")) >=
+                                 DateTime.Parse(DateTime.Parse(firstYear + string.Empty).ToString("d")) &&
+                                 DateTime.Parse(DateTime.Parse(order.OrderDate + string.Empty).ToString("d")) <=
+                                 DateTime.Parse(DateTime.Parse(lastYear + string.Empty).ToString("d"))
+                           select new
+                           {
+                               order.OrderStaff.storeId,
+                               order.TotalRecord
+                           };
+        var TotalRevenue = (from order in ListLastYear
+                            group order by new
+                            {
+                                order.storeId
+                            } into grup
+                            select new
+                            {
+                                years = DateTime.Now.Year,
+                                StoreName = (
+                                       from store in queryS
+                                       where grup.Key.storeId == store.id
+                                       select store.namestore
+                                ),
+                                total = grup.Sum(m => Int32.Parse(m.TotalRecord))
+                            }).ToList();
+
+        return TotalRevenue.ToList();
+    }
+
     // Main Dashboard
     public object GetCalculateLastMonth()
     {
@@ -245,13 +288,15 @@ public class RevenueService
         ArrayList obs = new ArrayList();
         var max = TotalSales.Max(x => x.BSellingPro);
         var maxValue = TotalSales.Where(x => x.BSellingPro == max).FirstOrDefault();
-        obs.Add(new {
+        obs.Add(new
+        {
             //max = "maxValue",
             maxValue
         });
         var min = TotalSales.Min(x => x.BSellingPro);
         var minValue = TotalSales.Where(x => x.BSellingPro == min).FirstOrDefault();
-        obs.Add(new {
+        obs.Add(new
+        {
             //min = "minValue",
             minValue
         });
@@ -259,7 +304,7 @@ public class RevenueService
     }
     // Store Dashboard
     public object GetCalculateLastMonthStore(string storeid)
-    {        
+    {
         var query = _OrderCollection.Find(x => x.OrderStaff.storeId == storeid).ToList();
 
         var today = DateTime.Today;
@@ -333,13 +378,15 @@ public class RevenueService
         ArrayList obs = new ArrayList();
         var max = TotalSales.Max(x => x.BSellingPro);
         var maxValue = TotalSales.Where(x => x.BSellingPro == max).FirstOrDefault();
-        obs.Add(new {
+        obs.Add(new
+        {
             //max = "maxValue",
             maxValue
         });
         var min = TotalSales.Min(x => x.BSellingPro);
         var minValue = TotalSales.Where(x => x.BSellingPro == min).FirstOrDefault();
-        obs.Add(new {
+        obs.Add(new
+        {
             //min = "minValue",
             minValue
         });
